@@ -11,7 +11,7 @@ define katello_devel::bundle(
   $scl_postgresql = $katello_devel::scl_postgresql,
   $user = $katello_devel::user,
   $cwd = $katello_devel::foreman_dir,
-  Integer[0] $timeout = 600,
+  Integer[0] $timeout = 1200,
 ) {
 
   if $use_rvm {
